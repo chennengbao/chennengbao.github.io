@@ -5,7 +5,9 @@
 - 组件版本号：**1.0.0**
 - 最新更新时间：**2017.01.16**
 - 组件下载地址：[http://js.h5course.cn/cnb_tool-1.0.0.js](http://js.h5course.cn/cnb_tool-1.0.0.js)
+
 ## API文档 ##
+
 ### 1、uniqueArrByFor 数组去重 ###
     $cnb.uniqueArrByFor(arr)
 处理数组去重。

@@ -357,6 +357,7 @@ Full-Width Styles
 }
 
 #main_content_wrap {
+  max-width: 700px;
   min-height: 600px;
   background: #f2f2f2;
 }

@@ -5,7 +5,7 @@
  *          https://github.com/chennengbao
  * @Date:   2016-08-25 19:27:59
  * @Last Modified by:   陈能堡 - 梦幻雪冰
- * @Last Modified time: 2016-10-25 16:25:06
+ * @Last Modified time: 2017-05-12 14:21:41
  * 
  * @uniqueArrByFor      数组去重
  * @uniqueArrByHash     数组去重
@@ -75,7 +75,7 @@
          * @demo 
          *     $cnb.randomRangeNum(2, 5, 5);
          * @result 
-         *     [4, 2, 4, 4, 3, 5]
+         *     [4, 2, 4, 4, 3]
          * @Author: 陈能堡
          */
         randomRangeNum: function(startNum, endNum, length) {
@@ -95,7 +95,7 @@
          * [randomUniqueRangeNum 根据范围产生不重复随机数]
          * @param  {[数字]} startNum [起始范围]
          * @param  {[数字]} endNum   [结束范围]
-         * @param  {[数字]} length   [需要产生随机数的格式]
+         * @param  {[数字]} length   [需要产生随机数的个数]
          * @return {[数组]}          [返回随机数的数组]
          * @demo 
          *     $cnb.randomUniqueRangeNum(1, 10, 5);
@@ -198,7 +198,7 @@
         /*
          * [quickSortArr 快速排序]
          * @param  {[数组]} arr [需要处理的数组]
-         * @return {[type]}     [无返回值]
+         * @return {[type]}     [返回排序后的数组]
          * @demo
          *     var arr = [2, 3, 5, 6, 1, 8, 3, 9];
          *     $cnb.quickSortArr(arr);
@@ -273,9 +273,9 @@
         },
         /*
          * [resolveString 解析含有特殊标记的字符串]
-         * @param  {[type]} strFn   [description]
-         * @param  {[type]} dataObj [description]
-         * @return {[type]}         [description]
+         * @param  {[type]} strFn   [含有注释的回调函数]
+         * @param  {[type]} dataObj [替换特殊标记的数据]
+         * @return {[type]}         [返回解析后的结果]
          * @demo
          *      var str = $cnb.resolveString(function() {
          *       /* <dl class="{{author}}">
@@ -312,7 +312,35 @@
                 console.log('~亲，数据没有传进来~');
                 return '';
             }
+        },
+        /*
+         * [os 运行平台检测]
+         * @return {[type]} [obj]
+         *
+         * @deomo
+         * Object {isTablet: false, isPhone: true, isAndroid: false, isPc: false}
+         * @Author: http://im.qq.com/
+         */
+        os: function() {
+            var ua          = navigator.userAgent,
+            isWindowsPhone  = /(?:Windows Phone)/.test(ua),  
+            isSymbian       = /(?:SymbianOS)/.test(ua) || isWindowsPhone,   
+            isAndroid       = /(?:Android)/.test(ua),   
+            isFireFox       = /(?:Firefox)/.test(ua),   
+            isChrome        = /(?:Chrome|CriOS)/.test(ua),  
+            // 平板
+            isTablet        = /(?:iPad|PlayBook)/.test(ua) || (isAndroid && !/(?:Mobile)/.test(ua)) || (isFireFox && /(?:Tablet)/.test(ua)),  
+            isPhone         = /(?:iPhone)/.test(ua) && !isTablet,  
+            isPc            = !isPhone && !isAndroid && !isSymbian;
+            
+            return {
+                isTablet: isTablet,
+                isPhone: isPhone,
+                isAndroid : isAndroid,
+                isPc : isPc
+            };
         }
     }
+    
     window['$cnb'] = tool;
 }();

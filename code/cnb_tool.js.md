@@ -264,7 +264,23 @@ IE6+、iOS、Android
 ### Bug & Tip ###
 目前只支持块注释
 
-<center></center>
+### 10、运行平台检测 ###
+	$cnb.os()
+运行平台检测
+### 参数 ###
+#### return ####
+返回检测的结果
+
+	Object {
+		isTablet: false, 
+		isPhone: true, 
+		isAndroid: false, 
+		isPc: false
+	}
+### 使用方法示例 ###
+	var result = $cnb.os();
+	console.log(result.isPc);
+
 
 
 

@@ -1,6 +1,4 @@
----
-title: JavaScript功能库
----
+
 
 ## JavaScript功能库说明
 

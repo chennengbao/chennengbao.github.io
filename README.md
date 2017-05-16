@@ -4,11 +4,7 @@ title: JavaScript功能库
 
 ## JavaScript功能库说明
 
-- 作者：**梦幻雪冰**
-- GitHub地址：[https://github.com/chennengbao](https://github.com/chennengbao)
-- 组件版本号：**1.0.1**
-- 最新更新时间：**2017.05.12**
-- 组件下载地址：[https://js.h5course.cn/cnb_tool-1.0.1.js](https://js.h5course.cn/cnb_tool-1.0.1.js)
+
 
 ## API文档 
 

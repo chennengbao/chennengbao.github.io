@@ -2,16 +2,16 @@
 title: CSS功能库
 ---
 
-## CSS功能库说明 ##
+## CSS功能库说明 
 - 作者：**梦幻雪冰**
 - GitHub地址：[https://github.com/chennengbao](https://github.com/chennengbao)
 - 组件版本号：**1.0.1**
 - 最新更新时间：**2017.01.16**
 - 组件下载地址：[http://css.h5course.cn/cnb_tool-1.0.1.css](http://css.h5course.cn/cnb_tool-1.0.1.css)
 
-## API文档 ##
+## API文档 
 
-### 单行超出显示省略号 ###
+### 单行超出显示省略号
     样式：
 	<style type="text/css">
 	    .cnb {
@@ -22,15 +22,15 @@ title: CSS功能库
 	结构：
 	<div class="cnb cnb-single-ellipsis">梦幻雪冰 - Ice Boy - 技在手，能在身，思在脑，从容过生活</div>
 
-#### 支持程度 ####
+#### 支持程度 
 IE6+、iOS、Android
-#### Bug & Tip ####
+#### Bug & Tip 
 <p class="tip">无</p>
 
 
 ----------
 
-### 多行文本超出显示省略号 ###
+### 多行文本超出显示省略号 
     样式：
 	<style type="text/css">
 	    .cnb {

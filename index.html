@@ -3,144 +3,44 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Chennengbao.GitHub.io : 梦幻雪冰">
+  <meta name="keywords" content="JavaScript，css，php，功能库，工具库，梦幻雪冰">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
-  <title>Docute</title>
-  <meta name="description" content="Effortlessly documentation done right! Writing docs without build process.">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docute/dist/docute.css">
-  <style>
-    .weibo-icon {
-      fill: #666;
-    }
-    .weibo-icon:hover {
-      fill: #333;
-    }
-  </style>
+  <title>首页 - 功能库 - 梦幻雪冰</title>
+  <link rel="stylesheet" href="https://css.h5course.cn/components/docute.css"/>
+  <script>
+      var _hmt = _hmt || [];
+      (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?51c0f5abd27f0589c7d96e872a572960";
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
+      })();
+  </script>
 </head>
 <body>
-  <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
-    <symbol id="i-weibo" viewBox="0 0 16 16"><path d="M6.72 13.532c-2.647.26-4.934-.936-5.106-2.675C1.442 9.12 3.45 7.497 6.1 7.235c2.648-.262 4.934.935 5.106 2.674.172 1.738-1.836 3.36-4.485 3.622zm-.697-2.066c-.256.41-.804.588-1.218.4-.407-.186-.527-.66-.27-1.06.252-.396.783-.573 1.193-.4.415.175.547.647.295 1.06zm.845-1.083c-.093.158-.298.234-.458.168-.158-.064-.208-.24-.118-.397.092-.154.29-.23.447-.167.16.058.216.237.128.397zm.118-1.81c-1.26-.328-2.685.3-3.233 1.41-.557 1.134-.018 2.39 1.255 2.802 1.32.426 2.874-.226 3.415-1.45.533-1.194-.133-2.425-1.437-2.762zm5.033-.814c-.226-.068-.38-.114-.263-.41.256-.643.282-1.197.005-1.593-.52-.742-1.94-.702-3.57-.02 0 0-.51.224-.38-.182.25-.805.213-1.48-.177-1.87-.884-.884-3.234.034-5.25 2.05C.876 7.242 0 8.842 0 10.224c0 2.647 3.393 4.255 6.713 4.255 4.35 0 7.246-2.528 7.246-4.535 0-1.213-1.023-1.9-1.94-2.186zm1.275-3.386c-.51-.568-1.266-.783-1.964-.635-.284.06-.465.34-.404.625.06.284.34.467.625.405.342-.072.71.033.962.31.25.278.317.656.21.987-.09.277.062.575.34.665.277.088.574-.063.663-.34.22-.678.083-1.45-.43-2.018zm1.614-1.457c-1.052-1.165-2.602-1.61-4.033-1.304-.33.07-.542.396-.47.727.07.33.395.542.726.47 1.018-.215 2.12.1 2.866.928.746.828.948 1.957.63 2.946-.106.323.07.668.393.772.322.104.667-.072.772-.394V7.06c.448-1.392.165-2.98-.886-4.143z"/></symbol>
-  </svg>
-  <!-- don't remove this part -->
   <div id="app"></div>
-  <script src="https://cdn.jsdelivr.net/npm/docute/plugins/docsearch.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/docute-evanyou/dist/evanyou.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/docute/dist/docute.js"></script>
+  <script src="https://js.h5course.cn/components/evanyou.min.js"></script>
+  <script src="https://js.h5course.cn/components/docute.js"></script>
   <script type="text/javascript">
-const langs = [
-  { title: 'English', path: '/home', matchPath: /^\/(home|plugin|cli|changelog)/ },
-  { title: '简体中文', path: '/zh-Hans/', matchPath: /^\/zh-Hans/ },
-  { title: '繁體中文', path: '/zh-Hant/', matchPath: /^\/zh-Hant/ },
-  { title: '日本語', path: '/ja/', matchPath: /^\/ja/ }
-]
-
-docute.init({
-  landing: 'landing.html',
-  announcement(route) {
-    const info = { type: 'success' }
-    if (/\/zh-.+$/.test(route.path)) {
-      info.html = '<a style="margin-right:10px;" class="docute-button docute-button-mini docute-button-success" href="https://github.com/egoist/donate" target="_blank">捐赠!</a> 通过 Patron 或者一次性捐赠支持 Docute 的开发。'
-    } else {
-      info.html = '<a style="margin-right:10px;" class="docute-button docute-button-mini docute-button-success" href="https://github.com/egoist/donate" target="_blank">Donate!</a> Support Docute development by becoming a patron or one-time donation.'
-    }
-    return info
-  },
-  debug: true,
-  // home: 'https://raw.githubusercontent.com/egoist/docute/master/README.md',
-  repo: 'egoist/docute',
-  twitter: 'rem_rin_rin',
-  'edit-link': 'https://github.com/egoist/docute/blob/master/docs/',
-  tocVisibleDepth: 3,
-  nav: {
-    default: [
-      {
-        title: 'Home', path: '/home'
+    docute.init({
+      landing: 'landing.html',
+      repo: 'chennengbao/',
+      nav: {
+        default: [
+          {
+            title: 'JavaScript 功能库', path: '/docs/home'
+          },
+          {
+            title: 'CSS功能库', path: '/docs/css'
+          }
+        ]
       },
-      {
-        title: 'Plugins', path: '/plugins'
-      },
-      {
-        title: 'Command-Line Tool', path: '/cli'
-      },
-      {
-        title: 'Changelog', path: '/changelog', source: 'https://raw.githubusercontent.com/egoist/docute/master/CHANGELOG.md'
-      },
-      {
-        title: 'Languages', type: 'dropdown', items: langs
-      }
-    ],
-    'zh-Hans': [
-      {
-        title: '首页', path: '/zh-Hans/'
-      },
-      {
-        title: '插件', path: '/zh-Hans/plugins'
-      },
-      {
-        title: '命令行工具', path: '/zh-Hans/cli'
-      },
-      {
-        title: '选择语言', type: 'dropdown', items: langs
-      }
-    ],
-    'zh-Hant': [
-      {
-        title: '首頁', path: '/zh-Hant/'
-      },
-      {
-        title: '插件', path: '/zh-Hant/plugins'
-      },
-      {
-        title: '命令行工具', path: '/zh-Hant/cli'
-      },
-      {
-        title: '選擇語言', type: 'dropdown', items: langs
-      }
-    ],
-    ja: [
-      {
-        title: 'はじめに', path: '/ja/'
-      },
-      {
-        title: 'プラグイン', path: '/ja/plugins'
-      },
-      {
-        title: 'コマンドラインツール', path: '/ja/cli'
-      },
-      {
-        title: '言語', type: 'dropdown', items: langs
-      }
-    ]
-  },
-  icons: [
-    {
-      label: '关注我的微博',
-      svgId: 'i-weibo',
-      svgClass: 'weibo-icon',
-      link: 'http://weibo.com/zengxinyu'
-    }
-  ],
-  plugins: [
-    docsearch({
-      apiKey: '65360cf9a91d87cd455d2b286d0d89ee',
-      indexName: 'docute',
-      tags: ['english', 'zh-Hans', 'zh-Hant', 'ja'],
-      url: 'https://docute.js.org'
-    }),
-    evanyou()
-  ]
-})
-
-  </script>
-  <!-- don't remove this part -->
-  <script>
-    window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-    ga('create', 'UA-54857209-11', 'auto');
-    ga('send', 'pageview');
-    docute.router.afterEach(function (to) {
-      ga('set', 'page', to.fullPath);
-      ga('send', 'pageview');
+      plugins: [
+        evanyou()
+      ],
+      tocVisibleDepth: 2
     });
   </script>
-  <script async src='https://www.google-analytics.com/analytics.js'></script>
 </body>
 </html>

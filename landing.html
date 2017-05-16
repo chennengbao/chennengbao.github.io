@@ -1,37 +1,89 @@
-<h1>Docute</h1>
+<h1>构建JavaScript、CSS、PHP功能库</h1>
 
-<h2>Effortlessly documentation done right.</h2>
+<h2>让自己毫无费力的搬砖。</h2>
 
-<ul class="features">
-  <li>You don't need to run build process 👻</li>
-  <li>Simple yet powerful, benefit from Vue.js and our useful plugin API 💯</li>
-  <li>Easy for both beginners and pros 🙌</li>
-  <li>Very cute name 🤔</li>
-</ul>
-
+<p>
+  <a href="" title="JavaScript 功能库" target="_blank">JavaScript 功能库</a>
+</p>
+<p>
+  <a href="" title="CSS 功能库" target="_blank">CSS 功能库</a>
+</p>
+<p>
+  <a href="" title="梦幻雪冰博客" target="_blank">Blog</a>
+</p>
+<p>
+  <a href="" title="HTML5学堂" target="_blank">Website</a>
+</p>
 <div class="landing-buttons">
-  <a class="landing-button" target="_blank" href="https://github.com/egoist/docute">
-    GitHub
-  </a>
-
-  <a class="landing-button" router-link="/home">
-    Docs
+  <a class="landing-button" title="开始" target="_blank" router-link="/docs/home">
+    开始
   </a>
 </div>
-
+<!-- 书写样式 -->
 <style>
+  html, body {
+      overflow: hidden;
+      margin: 0;
+  }
+  body {
+      font-family: 'Open Sans', 'Helvetica Neue', 'Hiragino Sans GB', 'LiHei Pro', Arial, sans-serif;
+      color: #333;
+  }
+  #wrapper {
+      position: absolute;
+      left: 0;
+      width: 320px;
+      text-align: center;
+      top: 50%;
+      left: 50%;
+      margin-left: -160px;
+      margin-top: -160px;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+  }
   h1 {
-    margin: 0;
-    margin-top: -50px;
-    font-weight: normal;
-    font-size: 40px;
-    letter-spacing: 1px;
+      font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
+      font-weight: 700;
+      font-size: 30px;
+      letter-spacing: 9px;
+      text-transform: uppercase;
+      margin: 12px 0;
+      left: 4px;
   }
   h2 {
-    margin-top: 20px;
-    color: #999;
-    font-weight: normal;
-    letter-spacing: 1px;
+      color: #999;
+      font-weight: normal;
+      font-size: 15px;
+      letter-spacing: .12em;
+      margin-bottom: 30px;
+      left: 3px;
+  }
+  h1, h2 {
+      position: relative;
+  }
+  p {
+      font-size: 14px;
+      line-height: 2em;
+      margin: 0;
+      letter-spacing: 2px;
+  }
+  canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+  }
+  a {
+      color: #999;
+      text-decoration: none;
+      transition: color .2s ease;
+  }
+  a:hover {
+      color: #39f;
   }
   .landing {
     padding: 10px;
@@ -57,20 +109,21 @@
     margin-bottom: 60px;
     font-size: 16px;
     line-height: 1.7;
-  }
+  }  
   .landing-button {
     border: 1px solid #ccc;
     border-radius: 33px;
-    padding: 10px 30px;
+    padding: 14px 36px;
     background-color: white;
     display: inline-block;
-    margin-right: 20px;
-    color: #333;
+    margin-top: 24px;
+    font-size: 18px;
+    color: #999;
   }
   .landing-button:hover {
-    border-color: #42b983;
-    color: #42b983;
+    border-color: #39f;
+    color: #39f;
     text-decoration: none;
-  }
+  }      
 </style>
 

@@ -1,55 +1,46 @@
 <!DOCTYPE html>
 <html>
-
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="Chennengbao.GitHub.io : 梦幻雪冰个人项目">
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-    <title>梦幻雪冰</title>
-    <script>
-        var _hmt = _hmt || [];
-        (function() {
-          var hm = document.createElement("script");
-          hm.src = "https://hm.baidu.com/hm.js?51c0f5abd27f0589c7d96e872a572960";
-          var s = document.getElementsByTagName("script")[0]; 
-          s.parentNode.insertBefore(hm, s);
-        })();
-    </script>
-  </head>
-  <body>
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/chennengbao">View on GitHub</a>
-          <h1 id="project_title">梦幻雪冰 - Ice Boy</h1>
-        </header>
-    </div>
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3><a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>CSS 功能库</h3>
-        <p>构建HTML5常见的CSS3效果，比较适合HTML5项目的开发（正在构建中）。</p>
-        <p>点击——><a href="https://github.com/chennengbao/chennengbao.github.io/blob/master/code/cnb_tool.css.md" target="_blank">查看</a></p>
-        <h3><a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>JavaScript 方法库</h3>
-        <p>构建HTML5常见的JS方法，适合常见项目的应用（正在构建中）。</p>
-        <p>点击——><a href="https://github.com/chennengbao/chennengbao.github.io/blob/master/code/cnb_tool.js.md" target="_blank">查看</a></p>
-        <h3><a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>HTML5 经典案例汇总</h3>
-        <p>构建HTML5经典案例汇总（正在构建中）。</p>
-        <p>点击——><a href="https://github.com/chennengbao/H5course" target="_blank">查看</a></p>        
-        <h3><a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>HTML5 实例汇总</h3>
-        <p>构建HTML5 实例汇总（正在构建中）。</p>
-        <p>点击——><a href="https://github.com/chennengbao/HTML5-DEMO" target="_blank">查看</a></p>        
-        <h3><a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>批量获取图片路径工具</h3>
-        <p>批量获取图片路径，实现图片预加载。</p>
-        <p>点击——><a href="http://cnb_tool.moxz.cn/" target="_blank">查看</a></p>        
-      </section>  
-    </div>
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p>Copyright © 2016 <a href="https://github.com/chennengbao/" title="梦雪冰">Ice Boy</a>. All Rights Reserved.</p>
-      </footer>
-    </div>
-  </body>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Chennengbao.GitHub.io : 梦幻雪冰">
+  <meta name="keywords" content="JavaScript，css，php，功能库，工具库，梦幻雪冰">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+  <title>首页 - 功能库 - 梦幻雪冰</title>
+  <link rel="stylesheet" href="https://css.h5course.cn/components/docute.css"/>
+  <script>
+      var _hmt = _hmt || [];
+      (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?51c0f5abd27f0589c7d96e872a572960";
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
+      })();
+  </script>
+</head>
+<body>
+  <div id="app"></div>
+  <script src="https://js.h5course.cn/components/evanyou.min.js"></script>
+  <script src="https://js.h5course.cn/components/docute.js"></script>
+  <script type="text/javascript">
+    docute.init({
+      landing: 'landing.html',
+      repo: 'chennengbao/',
+      nav: {
+        default: [
+          {
+            title: 'JavaScript 功能库', path: '/docs/JS_Tools'
+          },
+          {
+            title: 'CSS功能库', path: '/docs/CSS_Tools'
+          }
+        ]
+      },
+      plugins: [
+        evanyou()
+      ],
+      tocVisibleDepth: 2
+    });
+  </script>
+</body>
 </html>

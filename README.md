@@ -1,4 +1,4 @@
-#CNB
+<h1>CNB</h1>
 
 <p align="center">
   <b>Special thanks to the generous sponsorship by: </b>

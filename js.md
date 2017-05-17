@@ -178,7 +178,7 @@ IE6+、iOS、Android
 随机数以数组的形式返回
 
 #### 使用方法示例 
-    $cnb.randomUniqueRangeNum(1, 10, 5);
+    $cnb.randomUniqueRangeNumSE(1, 10, 5);
 
 	结果：[2, 8, 7, 3, 5]
 

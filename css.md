@@ -448,3 +448,9 @@ IE6+、iOS、Android
 IE6+、iOS、Android
 #### Bug & Tip ####
 <p class="tip">使用了display: block;</p>
+
+## License
+
+[MIT](http://opensource.org/licenses/MIT)
+
+Copyright (c) chennengbao 2016 <chennengbao@mj216.com>(https://github.com/chennengbao)

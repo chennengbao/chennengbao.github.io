@@ -3,7 +3,7 @@
 - GitHub地址：[https://github.com/chennengbao](https://github.com/chennengbao)
 - 组件版本号：**1.0.1**
 - 最新更新时间：**2017.05.12**
-- 组件下载地址：[https://js.h5course.cn/cnb_tool-1.0.1.js](https://js.h5course.cn/cnb_tool-1.0.1.js)
+- 组件下载地址：[https://js.h5course.cn/cnb-1.0.2.min.js](https://js.h5course.cn/cnb-1.0.2.min.js)
 
 ## API文档 
 
@@ -68,11 +68,11 @@ IE6+、iOS、Android
 ##### startNum 
 类型：数字<br>
 默认：无默认值<br>
-描述：起始范围
+描述：起始范围（包含）
 ##### endNum 
 类型：数字<br>
 默认：无默认值<br>
-描述：结束范围　
+描述：结束范围（包含）　
 ##### length 
 类型：数字<br>
 默认：无默认值<br>
@@ -92,7 +92,8 @@ IE6+、iOS、Android
 
 
 ----------
-### 根据范围产生不重复随机数 
+
+### 根据范围产生不重复随机数（一） 
 	$cnb.randomUniqueRangeNum (startNum, endNum, length)
 根据范围产生不重复随机数。
 
@@ -100,11 +101,11 @@ IE6+、iOS、Android
 ##### startNum 
 类型：数字<br>
 默认：无默认值<br>
-描述：起始范围
+描述：起始范围（包含）
 ##### endNum 
 类型：数字<br>
 默认：无默认值<br>
-描述：结束范围　
+描述：结束范围（包含）
 ##### length 
 类型：数字<br>
 默认：无默认值<br>
@@ -113,7 +114,71 @@ IE6+、iOS、Android
 随机数以数组的形式返回
 
 #### 使用方法示例 
-    $cnb.randomUniqueRangeNum(2, 5, 5);
+    $cnb.randomUniqueRangeNum(1, 10, 5);
+
+	结果：[2, 8, 7, 3, 5]
+
+#### 支持程度 
+IE6+、iOS、Android
+#### Bug & Tip 
+<p class="tip">无</p>
+
+----------
+
+### 根据范围产生不重复随机数（二） 
+	$cnb.randomUniqueRangeNumPlus (startNum, endNum, count)
+根据范围产生不重复随机数。
+
+#### 参数 
+##### startNum 
+类型：数字<br>
+默认：无默认值<br>
+描述：起始范围（包含）
+##### endNum 
+类型：数字<br>
+默认：无默认值<br>
+描述：结束范围（包含）　
+##### count 
+类型：数字<br>
+默认：无默认值<br>
+描述：需要产生随机数的个数　
+##### return 
+随机数以数组的形式返回
+
+#### 使用方法示例 
+    $cnb.randomUniqueRangeNumPlus(1, 10, 5);
+
+	结果：[2, 8, 7, 3, 5]
+
+#### 支持程度 
+IE6+、iOS、Android
+#### Bug & Tip 
+<p class="tip">无</p>
+
+----------
+
+### 根据范围产生不重复随机数（三） 
+	$cnb.randomUniqueRangeNumSE (startNum, endNum, count)
+根据范围产生不重复随机数。
+
+#### 参数 
+##### startNum 
+类型：数字<br>
+默认：无默认值<br>
+描述：起始范围（包含）
+##### endNum 
+类型：数字<br>
+默认：无默认值<br>
+描述：结束范围（包含）　
+##### count 
+类型：数字<br>
+默认：无默认值<br>
+描述：需要产生随机数的个数　
+##### return 
+随机数以数组的形式返回
+
+#### 使用方法示例 
+    $cnb.randomUniqueRangeNum(1, 10, 5);
 
 	结果：[2, 8, 7, 3, 5]
 
@@ -319,6 +384,10 @@ IE6+、iOS、Android
 <p class="tip">无</p>
 
 
+## License
 
+[MIT](http://opensource.org/licenses/MIT)
+
+Copyright (c) chennengbao 2016 <chennengbao@mj216.com>(https://github.com/chennengbao)
 
 

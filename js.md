@@ -3,7 +3,7 @@
 - GitHub地址：[https://github.com/chennengbao](https://github.com/chennengbao)
 - 组件版本号：**1.0.2**
 - 最新更新时间：**2017.05.17**
-- 组件下载地址：[https://js.h5course.cn/cnb-1.0.2.min.js](https://js.h5course.cn/cnb-1.0.2.min.js)
+- 组件下载地址：[https://js.h5course.cn/cnb-1.0.3.min.js](https://js.h5course.cn/cnb-1.0.3.min.js)
 
 ## API文档 
 
@@ -383,6 +383,79 @@ IE6+、iOS、Android
 #### Bug & Tip 
 <p class="tip">无</p>
 
+
+----------
+
+### 使用createJS预加载资源和播放音频 
+	$cnb.preLoadFileFn(paramObj);
+使用createJS预加载资源和soundJS播放加载完成的音频
+
+#### 参数 
+
+##### paramObj
+类型：对象<br>
+默认：无默认值<br>
+描述：<br>
+resourceArr属性：预加载文件列表　<br>
+handleProgress属性：加载进度回调函数<br>
+handleComplete属性：加载完成回调函数<br>
+示例：<br>
+
+	{
+		// 资源列表
+		resourceArr: [
+		    {src: 'http://img.h5course.cn/weixin/jsqd_new_12.jpg'}
+		],
+		// 加载进度回调函数
+		handleProgress: function(e, queue) {
+		},
+		// 加载完成回调函数
+		handleComplete: function(e) {
+		}
+	}
+
+##### return 
+返回LoadQueue实例（LoadQueue类是用于预加载内容的主要API）
+
+#### 使用方法示例 
+
+	<script src='https://js.h5course.cn/preloadjs-0.6.2.min.js' type='text/javascript'></script>
+	<script src='https://js.h5course.cn/soundjs-0.6.2.min.js' type='text/javascript'></script>
+	<script src='https://js.h5course.cn/cnb-1.0.3.min.js' type='text/javascript'></script>
+	<script type='text/javascript'>
+	    $cnb.preLoadFileFn({
+	        // 资源列表
+	        resourceArr: [
+	            {src: 'http://img.h5course.cn/weixin/jsqd_new_12.jpg'},
+	            {src: 'http://img.h5course.cn/weixin/jsqd_new_8.jpg'},
+	            {src: 'https://img.h5course.cn/weixin/h5course.jpg'},
+	            {id:'cnbSound', src:'asset/bg_sound.mp3'}
+	        ],
+	        // 加载进度回调函数
+	        handleProgress: function(e, queue) {
+	            console.log(queue.progress);
+	        },
+	        // 加载完成回调函数
+	        handleComplete: function(e) {
+	            // 正常播放
+	            createjs.Sound.play('sound');
+	            // 无限循环播放
+	            createjs.Sound.play('cnbSound', {
+	                loop: 0
+	            });
+	
+	            // 停止播放
+	            setTimeout(function() {
+	                createjs.Sound.stop('cnbSound');
+	            }, 4000);
+	        }
+	    });
+	</script>
+
+#### 支持程度 
+IE9+、iOS、Android
+#### Bug & Tip 
+<p class="tip">preLoadFileFn方法是基于preloadjs和soundjs进行封装</p>
 
 ## License
 

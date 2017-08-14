@@ -3,7 +3,7 @@
 - GitHub地址：[https://github.com/chennengbao](https://github.com/chennengbao)
 - 组件版本号：**1.0.2**
 - 最新更新时间：**2017.05.17**
-- 组件下载地址：[https://js.h5course.cn/cnb-1.0.3.min.js](https://js.h5course.cn/cnb-1.0.3.min.js)
+- 组件下载地址：[http://cdn.gk48.cn/cnb/cnb-1.0.4.min.js](http://cdn.gk48.cn/cnb/cnb-1.0.4.min.js)
 
 ## API文档 
 
@@ -456,6 +456,34 @@ handleComplete属性：加载完成回调函数<br>
 IE9+、iOS、Android
 #### Bug & Tip 
 <p class="tip">preLoadFileFn方法是基于preloadjs和soundjs进行封装</p>
+
+
+----------
+
+### 获取url中的参数 
+	$cnb.getUrlParams()
+获取url中的参数
+
+#### 参数 
+##### return 
+返回获取参数的结果
+
+	Object {
+		data: 'mj216.com',
+		weixin: 'mj216-com'
+	}
+
+#### 使用方法示例 
+	var result = $cnb.getUrlParams();
+	console.log(result);
+
+#### 支持程度 
+IE6+、iOS、Android
+#### Bug & Tip 
+<p class="tip">无</p>
+
+
+
 
 ## License
 

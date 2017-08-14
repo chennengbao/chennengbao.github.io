@@ -1,8 +1,8 @@
 ## JavaScript功能库说明 
 - 作者：**梦幻雪冰**
 - GitHub地址：[https://github.com/chennengbao](https://github.com/chennengbao)
-- 组件版本号：**1.0.2**
-- 最新更新时间：**2017.05.17**
+- 组件版本号：**1.0.4**
+- 最新更新时间：**2017.08.24**
 - 组件下载地址：[http://cdn.gk48.cn/cnb/cnb-1.0.4.min.js](http://cdn.gk48.cn/cnb/cnb-1.0.4.min.js)
 
 ## API文档 
@@ -481,8 +481,6 @@ IE9+、iOS、Android
 IE6+、iOS、Android
 #### Bug & Tip 
 <p class="tip">无</p>
-
-
 
 
 ## License
